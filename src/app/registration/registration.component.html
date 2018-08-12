@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div id="content" #content>
+  <div class="container signin-content">
+
+    <div class='title-section'>
+      <h3 class='title'>Регистрация</h3>
+      <a routerLink="/login">Уже есть аккаунт?</a>
+    </div>
+
+    <div class='signup-section-panel'>
+      <form action="">
+        <div class='login-section'>
+          <span>E-mail</span>
+          <input type="text" #email>
+          <span class='underline-text' #underemail>На этот адрес мы будем отправлять результаты оценок</span>
+        </div>
+        <div class="password-section">
+          <span>Пароль</span>
+          <input type="password" #password>
+          <span class='underline-text' #underpass>Более 6 символов</span>
+        </div>
+        <div class="signup-section">
+          <a class="register-btn" (click)="checkInputs()">Завершить регистрацию</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="second-div" #seconddiv>
+  <div class="container ">
+    <div class='text-finish'>
+      <h2>Регистрация завершена!</h2>
+      <span>Что дальше? Теперь вы можете получить полноценную оценку недвижимости, официально заверенную одной из партнерских оценочных компаний всего за один час!</span>
+    </div>
+    <div class='take-full-grade'>
+      <a routerLink="/rating" class="get_rating">Получить полную оценку</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+<header>
+  <div class="container header">
+    <div>
+      <a routerLink="/" class="for_comp"><span>Компаниям</span></a>
+      <!--<a routerLink="/property">Property</a>-->
+    </div>
+    <div class='logo'>
+      <a routerLink="/preview">
+        <img src="/assets/img/metadex_logo.png" alt="">
+      </a>
+    </div>
+    <div class=''>
+      <a routerLink="/login"><button type="button" class="btn btn-signup">Вход</button></a>
+      <a routerLink="/registration" ><button type="button" class="btn btn-success">Регистрация</button></a>
+    </div>
+  </div>
+</header>
+
+<div class="info">
+  <h3 class="title">Отчет от {{coming_data[0].companies}}</h3>
+  <span>Адрес объекта</span>
+  <br>
+  <span class="info-address">{{coming_data[0].address}}</span>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+    <th scope="col"></th>
+    <th *ngFor = 'let count of reports;let i = index'>
+    Аналог {{i}}
+    </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Месторасположение</th>
+      <td *ngFor="let item of reports">{{item.address}}</td>
+    </tr>
+    <tr>
+      <th>Источник данных</th>
+      <td>12331</td>
+    </tr>
+    <tr>
+      <th>Контактные данные</th>
+      <td>+777777777777</td>
+    </tr>
+    <tr>
+      <th>Количество комнат</th>
+      <td *ngFor="let item of reports">{{item.count_room}}</td>
+    </tr>
+    <tr>
+      <th>Материал стен здания</th>
+      <td>Бетон</td>
+    </tr>
+    <tr>
+      <th>Этаж</th>
+      <td *ngFor="let item of reports">{{item.initial_stage}} из {{item.end_stage}}</td>
+    </tr>
+    <tr>
+      <th>Общая площадь, м²</th>
+      <td *ngFor="let item of reports">{{item.square}}</td>
+    </tr>
+    <tr>
+      <th>Санузел</th>
+      <td *ngFor="let item of reports">{{item.bathroom}}</td>
+    </tr>
+    <tr>
+      <th>Планировка</th>
+      <td *ngFor="let item of reports">{{item.layout}}</td>
+    </tr>
+    <tr>
+      <th>Техническое состояние</th>
+      <td *ngFor="let item of reports">{{item.tech_status}}</td>
+    </tr>
+    <tr>
+      <th>Год постройки</th>
+      <td>1996</td>
+    </tr>
+    <tr>
+      <th>Цена предложения, KZT</th>
+      <td>10000000</td>
+    </tr>
+    <tr>
+      <th>Цена за м², KZT</th>
+      <td>200000</td>
+    </tr>
+    <!--<tr>-->
+      <!--<th>Type</th>-->
+      <!--<td *ngFor="let item of reports">{{item.type}}</td>-->
+    <!--</tr>-->
+  </tbody>
+</table>
+

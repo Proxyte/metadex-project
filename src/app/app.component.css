@@ -1,0 +1,36 @@
+.site-header{
+  width:100%;
+	position:fixed;
+  background-color: transparent;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse{
+  justify-content: flex-end;
+}
+
+li{
+	margin-left:20px;
+}
+
+.header{
+	display:flex;
+	justify-content: space-between;
+}
+
+.collapse li a{
+	  font-family: GothamPro,Helvetica,sans-serif;
+  	font-size: 12px;
+  	font-weight: 500;
+  	font-style: normal;
+  	font-stretch: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	text-align: center;
+  	color: #ffffff;
+}
+

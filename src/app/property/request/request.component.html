@@ -1,0 +1,47 @@
+<header>
+  <div class="container header">
+    <div>
+      <a routerLink="/" class="for_comp"><span>Компаниям</span></a>
+      <!--<a routerLink="/property">Property</a>-->
+    </div>
+    <div class='logo'>
+      <a routerLink="/preview">
+        <img src="/assets/img/metadex_logo.png" alt="">
+      </a>
+    </div>
+    <div class=''>
+      <a routerLink="/login"><button type="button" class="btn btn-signup">Вход</button></a>
+      <a routerLink="/registration" ><button type="button" class="btn btn-success">Регистрация</button></a>
+    </div>
+  </div>
+</header>
+
+<h3 class="title">Заявки и оценки</h3>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">Дата</th>
+    <th scope="col">Объект оценки</th>
+    <th scope="col">Оценщик</th>
+    <th scope="col">Статус заявки</th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+    <th scope="col">Банк</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor ="let item of reports;let i = index">
+    <th scope="row">{{item.date}}</th>
+    <td>{{item.address}}</td>
+    <td>{{item.companies}}</td>
+    <td>Отчет готов</td>
+    <td><img src="/assets/img/icons/download.svg" alt=""></td>
+    <td><img src="/assets/img/icons/zoom-in.svg" alt="" (click)="watchMore(i)"></td>
+    <td><img src="/assets/img/icons/credit-card.svg" alt=""></td>
+    <td><a class="bank" (click)="chooseBank(i)">Выбрать</a></td>
+  </tr>
+
+  </tbody>
+</table>
+

@@ -1,0 +1,79 @@
+<header>
+  <div class="container header">
+    <div>
+      <a routerLink="/" class="for_comp"><span>Компаниям</span></a>
+    </div>
+    <div class='logo'>
+      <a routerLink="/prerating">
+        <img src="/assets/img/metadex_logo.png" alt="">
+      </a>
+    </div>
+    <div class=''>
+      <a routerLink="/login"><button type="button" class="btn btn-signup">Вход</button></a>
+      <a routerLink="/registration" ><button type="button" class="btn btn-success">Регистрация</button></a>
+    </div>
+  </div>
+</header>
+
+
+
+
+<h3 class='title'>Предварительная оценка недвижимости</h3>
+<div class="container first-div">
+
+  <div class="alert alert-danger" [ngClass]="{'error':warning}">
+    Проверьте правильность заполнения полей
+  </div>
+
+
+  <div id="rating-content" *ngIf='stepRate===0'>
+    <form action="">
+      <div class="address">
+        <span>Введите адрес</span>
+        <input type="text" placeholder="Например, Алматы, Богенбай батыра 49" #address>
+      </div>
+
+
+      <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChooseLocation($event)">
+        <agm-marker *ngIf="locationChosen" [latitude]="latitude" [longitude]="longitude"></agm-marker>
+      </agm-map>
+
+      <div class="square">
+        <span>Площадь, м²</span>
+        <input type="text" #square>
+      </div>
+
+      <div class="countroom">
+        <span>Количество комнат</span>
+        <input type="text" placeholder="1" #countroom>
+      </div>
+
+      <div class="year">
+        <span>Год строения</span>
+        <input type="text" placeholder="1" #year>
+      </div>
+
+
+      <div class="stages">
+        <span>Этаж</span>
+        <div class="stage">
+          <input class="stage-input" type="text" placeholder="1" #initialstage>
+          <span>из</span>
+          <input class="stage-input" type="text" placeholder="1" #endstage>
+        </div>
+      </div>
+
+      <div class="types">
+        <span>Тип строения</span>
+        <input type="text" placeholder="Монолитный" #type>
+      </div>
+
+      <div class="next">
+        <a class="next-btn" (click)="rateProperty()">Оценить</a>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+

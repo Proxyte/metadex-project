@@ -1,0 +1,18 @@
+thead{
+  background-color: #dbdbdb
+}
+
+table{
+  width:90%;
+  margin:0 auto;
+  letter-spacing:1.5px;
+}
+
+tbody{
+  letter-spacing:1px;
+}
+
+table tbody tr td img{
+  width: 30px;
+  height:30px;
+}

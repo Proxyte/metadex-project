@@ -1,0 +1,42 @@
+<header>
+  <div class="container header">
+    <div>
+      <a routerLink="/" class="for_comp"><span>Компаниям</span></a>
+      <!--<a routerLink="/property">Property</a>-->
+    </div>
+    <div class='logo'>
+      <a routerLink="/preview">
+        <img src="/assets/img/metadex_logo.png" alt="">
+      </a>
+    </div>
+    <div class=''>
+      <a routerLink="/login"><button type="button" class="btn btn-signup">Вход</button></a>
+      <a routerLink="/registration" ><button type="button" class="btn btn-success">Регистрация</button></a>
+    </div>
+  </div>
+</header>
+<div id="choose-comp">
+  <h3 class="title">В каком банке получить ипотеку?</h3>
+  <div class="container choose-menu">
+    <div class="row images-menu">
+      <div class="col-sm-4" *ngFor="let item of banks;let i = index">
+        <div class="choose-block">
+          <div id="image-logo" (click)="selectBanks(i)">
+            <img class="images" src="{{item.url}}" alt="">
+            <div class="mark-image">
+              <img src="/assets/img/icons/mark.svg" alt="">
+            </div>
+          </div>
+          <div class="text">
+            <h3 class="name-companies">{{item.name}}</h3>
+            <a>Условии банка</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="final">
+    <a class="next-btn" >Отправить на рассмотрение</a>
+  </div>
+
+</div>

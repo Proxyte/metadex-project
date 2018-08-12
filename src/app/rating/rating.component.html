@@ -1,0 +1,139 @@
+<app-header></app-header>
+<h3 class='title'>Оценка недвижимости</h3>
+<div class="container first-div">
+  <div class="row steps">
+    <div class="col-sm-4 step">
+      <div class="step-block" #stepblock>
+        <span>Шаг 1</span>
+      </div>
+      <span>Заполните данные</span>
+    </div>
+    <div class="col-sm-4 step">
+      <div class="step-block">
+        <span>Шаг 2</span>
+      </div>
+      <span>Выберите подрядчика</span>
+    </div>
+    <div class="col-sm-4 step">
+      <div class="step-block" #stepblock>
+        <span>Шаг 3</span>
+      </div>
+      <span>Готово!</span>
+    </div>
+  </div>
+
+
+  <div class="alert alert-danger" [ngClass]="{'error':warning}">
+    Проверьте правильность заполнения полей
+  </div>
+
+
+  <div id="rating-content" *ngIf='stepIndex===0'>
+    <form action="">
+      <div class="address">
+        <span>Введите адрес</span>
+        <input type="text" placeholder="Например, Алматы, Богенбай батыра 49" #address>
+      </div>
+
+
+      <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChooseLocation($event)">
+        <agm-marker *ngIf="locationChosen" [latitude]="latitude" [longitude]="longitude"></agm-marker>
+      </agm-map>
+
+      <div class="square">
+        <span>Площадь, м²</span>
+        <input type="text" #square>
+      </div>
+
+      <div class="countroom">
+        <span>Количество комнат</span>
+        <input type="text" placeholder="1" #countroom>
+      </div>
+
+      <div class="stages">
+        <span>Этаж</span>
+        <div class="stage">
+          <input class="stage-input" type="text" placeholder="1" #initialstage>
+          <span>из</span>
+          <input class="stage-input" type="text" placeholder="1" #endstage>
+        </div>
+      </div>
+
+      <div class="types">
+        <span>Тип строения</span>
+        <input type="text" placeholder="Монолитный" #type>
+      </div>
+
+      <div class="sanuz">
+        <span>Санузел</span>
+        <input type="text" placeholder="Раздельный" #sanuzel>
+      </div>
+
+      <div class="tstatus">
+        <span>Техническое состояние</span>
+        <input type="text" placeholder="Отличный" #techstatus>
+      </div>
+
+      <div class="plans">
+        <span>Планировка</span>
+        <input type="text" placeholder="Улучшенная" #plan>
+      </div>
+
+      <div class="next">
+        <a class="next-btn" (click)="collectInput()">Далее</a>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+
+<div id="choose-comp" *ngIf='stepIndex===1'>
+  <h3>Выберите минимум 2-х подрядчиков</h3>
+  <div class="container choose-menu">
+    <div class="arrows" (click)="chooseCompanies(-1)">
+      <img class="left" src="/assets/img/icons/arrow_active.svg" alt="">
+    </div>
+    <div class="row images-menu">
+      <div class="col-sm-4" *ngFor="let item of company | slice:initial_slice:initial_slice+3; let i = index">
+        <div class="choose-block">
+          <div id="image-logo" (click)="selectCompany(item,i)">
+            <img class="images" src="{{item.url}}" alt="">
+            <div class="mark-image">
+              <img src="/assets/img/icons/mark.svg" alt="">
+            </div>
+          </div>
+          <div class="text">
+            <h3 class="name-companies">{{item.name}}</h3>
+            <a>Подробнее о компании</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" arrows" (click)="chooseCompanies(+1)">
+      <img class="right" src="/assets/img/icons/arrow_active.svg" alt="">
+    </div>
+  </div>
+  <div class="final">
+    <a class="next-btn" (click)="nextStage()">Далее</a>
+  </div>
+
+</div>
+
+<div id ='ready-div' *ngIf='stepIndex===2'>
+    <div class="container">
+      <h3 class="title-order">Заявка отправлена на оценку!</h3>
+      <div class="ready-div-text">
+        <span>
+          Вы можете отслеживать статус заявки в личном кабинете.
+          Как только оценка будет готово, вам придет уведомление на почту.
+          Примерное время ожидания отчета ХХ дней.
+        </span>
+      </div>
+
+      <div class="watch-order">
+        <a routerLink="/property" class="watch-order-btn" >Отслеживать заявку</a>
+      </div>
+
+    </div>
+</div>
