@@ -57,3 +57,20 @@ table{
 .dollar{
   font-size:28px;
 }
+
+.upload-block{
+  display:flex;
+}
+
+.download{
+  display:inline-block;
+  padding:8px 26px 8px 20px;
+  margin:0 auto 50px auto;
+  border:1px solid #5CB85C;
+  border-radius:5px;
+}
+
+.download img{
+  width:30px;
+  margin-right:10px;
+}
