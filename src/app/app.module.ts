@@ -13,6 +13,7 @@ import { DataService } from './data.service';
 import { PreviewComponent } from './preview/preview.component';
 import { PreresultComponent } from './preresult/preresult.component';
 import { LogincompanyComponent } from './logincompany/logincompany.component';
+import { LoginComponent} from './login/login.component';
 import { RaterComponent } from './rater/rater.component';
 
 
@@ -26,6 +27,7 @@ import { RaterComponent } from './rater/rater.component';
     PreresultComponent,
     LogincompanyComponent,
     RaterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
