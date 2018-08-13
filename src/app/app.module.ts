@@ -7,7 +7,6 @@ import { PropertyModule } from './property/property.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { RatingComponent } from './rating/rating.component';
 import { DataService } from './data.service';
@@ -21,7 +20,6 @@ import { RaterComponent } from './rater/rater.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent,
     RegistrationComponent,
     RatingComponent,
     PreviewComponent,
