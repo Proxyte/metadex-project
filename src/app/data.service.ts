@@ -1,11 +1,19 @@
 import { Injectable } from '@angular/core';
-import { User } from './user';
+import {User, UserComp} from './user';
 import { Prerating }  from './prerating';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
+
+  private users_comp:UserComp[]=[
+    {
+      email:'comp',
+      password:'comp',
+      status:false
+    }
+  ]
 
   private users:User[]=[
     {
@@ -29,6 +37,10 @@ export class DataService {
 
   getUser(){
     return this.user;
+  }
+
+  getUserComp(){
+    return this.users_comp;
   }
 
 

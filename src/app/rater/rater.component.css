@@ -1,0 +1,16 @@
+table{
+  width:80%;
+  margin:0 auto
+}
+
+thead{
+  background-color: #dbdbdb
+}
+
+tbody tr td img{
+  width:30px;
+}
+
+.title{
+  margin-top:150px;
+}

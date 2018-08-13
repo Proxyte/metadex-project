@@ -26,14 +26,14 @@
           <form action="">
             <div class='login-section'>
               <span>Логин</span>
-              <input type="text">
+              <input type="text" #login>
             </div>
             <div class="password-section">
               <span>Пароль</span>
-              <input type="password">
+              <input type="password" #password>
             </div>
             <div class="signin-section">
-              <button class='signin-btn'>Войти</button>
+              <a class='signin-btn' (click)="checkData()">Войти</a>
             </div>
           </form>
         </div>
