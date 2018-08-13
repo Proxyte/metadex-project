@@ -7,17 +7,30 @@ import { Prerating }  from './prerating';
 })
 export class DataService {
 
-  private user:User[]=[
+  private users:User[]=[
     {
       email:"admin",
-      password:"admin"
+      password:"admin",
+      status:false
+    },
+    {
+      email:"nurbol",
+      password:"nurbol",
+      status:false
     }
   ];
 
+  private user:User[]=[];
+
 
   getData(){
+    return this.users;
+  }
+
+  getUser(){
     return this.user;
   }
+
 
   constructor() { }
 }
