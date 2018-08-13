@@ -13,34 +13,33 @@ import {DataService} from '../../data.service';
 })
 export class RequestComponent implements OnInit {
 
-  authorized = false;
-  user = this.data.getUser();
-  status_user = this.user[0].status;
+  // user = this.data.getUser();
+  // status_user = this.user[0].status;
   reports:any;
 
   constructor(private property:PropertyService,private data:DataService,private router:Router) { }
 
   ngOnInit() {
-    this.authorized = this.status_user;
-    if(this.user.length==0){
-      this.authorized = false;
-    }
-    console.log(this.authorized);
+    // this.authorized = this.status_user;
+    // if(this.user.length==0){
+    //   this.authorized = false;
+    // }
+    // console.log(this.authorized);
     this.property.getItem();
     this.reports = this.property.getProperty();
   }
 
 
-  checkUser(){
-    let user = this.data.getUser();
-    console.log("Stauts"+user[0].status);
-    if(user[0].status === true){
-      this.authorized = true;
-    }
-    else{
-      this.authorized = false;
-    }
-  }
+  // checkUser(){
+  //   let user = this.data.getUser();
+  //   console.log("Stauts"+user[0].status);
+  //   if(user[0].status === true){
+  //     this.authorized = true;
+  //   }
+  //   else{
+  //     this.authorized = false;
+  //   }
+  // }
 
   chooseBank(val){
     let list_item = this.property.getItem();
