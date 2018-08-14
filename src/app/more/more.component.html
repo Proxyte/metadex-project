@@ -1,0 +1,34 @@
+<h3 class="title">Рассмотрение заявки</h3>
+
+<div class="container description-block">
+    <div class="col-sm-8 info">
+      <form action="">
+        Адрес
+      </form>
+    </div>
+
+    <div class="col-sm-4 item-list">
+      <span style="color:#818A91">Найдено {{property_list.length}} объектов</span>
+
+      <div class="item" *ngFor = 'let item of property_list'>
+        <div class="checkbox">
+          <div>
+            <input class="checking-checkbox" type="checkbox" ><span>Выбрать</span>
+          </div>
+          <div class="date">
+            <span>Размещено {{item.date}}</span>
+          </div>
+        </div>
+        <div class="item-descr">
+          <h2>{{item.count_room}} комнатная квартира, {{item.address}}</h2>
+          <span>Пластиковые окна, неугловая, улучшенная, комнаты изолированы, новая сантехника.
+            Дом монолитный, 2016 г.п. Этаж 9 из 9 Площадь 56.5 м2,
+            жилая — 31.2 м2, кухня — 10.6 м2. Состояние хорошее
+          </span>
+          <h2>900 000 000 тг.</h2>
+        </div>
+      </div>
+    </div>
+</div>
+
+

@@ -8,6 +8,7 @@ import {PreviewComponent} from './preview/preview.component';
 import {PreresultComponent} from './preresult/preresult.component';
 import {LogincompanyComponent} from './logincompany/logincompany.component';
 import {RaterComponent} from './rater/rater.component';
+import {MoreComponent} from './more/more.component';
 
 const routes: Routes = [
 	{
@@ -43,6 +44,10 @@ const routes: Routes = [
         component:RaterComponent
       },
       {
+        path:"more",
+        component:MoreComponent
+      },
+      {
         path:'property',
         loadChildren:'./property/property.module#PropertyModule'
       },
@@ -53,7 +58,7 @@ const routes: Routes = [
       {
         path:"bank",
         redirectTo:'/property'
-      },
+      }
     ],
 	},
 ];

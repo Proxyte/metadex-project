@@ -75,6 +75,18 @@ export class PropertyService {
     {
       url:"/assets/img/homecredit.png",
       name:"Homecredit Bank"
+    },
+    {
+      url:"/assets/img/kaspi.png",
+      name:"BCT bank"
+    },
+    {
+      url:"/assets/img/qazkom.png",
+      name:"Halyk"
+    },
+    {
+      url:"/assets/img/homecredit.png",
+      name:"Antoher Bank"
     }
   ];
 

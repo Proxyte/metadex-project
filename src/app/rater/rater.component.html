@@ -12,9 +12,9 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <th scope="row"></th>
-    <td></td>
+  <tr *ngFor = 'let item of property_list'>
+    <th scope="row">{{item.date}}</th>
+    <td>{{item.address}}</td>
     <td>Даурен</td>
     <td>Выполнено</td>
     <td><img src="/assets/img/icons/zoom-in.svg" alt="" (click)="watchMore(i)"></td>

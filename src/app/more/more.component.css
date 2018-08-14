@@ -1,0 +1,46 @@
+.description-block{
+  width:80%;
+  margin:0 auto;
+  display:flex;
+}
+
+
+.item{
+  border:1px solid #DDDDDD;
+  border-radius:5px;
+  margin-bottom:20px;
+}
+
+.item-descr{
+  padding:26px 21px;
+}
+
+.item-descr h2{
+  font-size:20px;
+  color:#373A3C;
+}
+
+.item-descr span{
+  display:block;
+  margin:15px 0 22px 0;
+  color:#818A91;
+  font-size:14px;
+}
+
+.checkbox{
+  color:#5CB85C;
+  background-color:#E2EED8;
+  padding:12px 10px 13px 14px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.checkbox input{
+  margin-right:9px;
+}
+
+.date{
+  color:#818A91;
+  font-size:14px;
+}

@@ -178,6 +178,7 @@
 agm-map{
   height:200px;
 }
+
 .square{
   margin-top:20px !important;
 }
@@ -185,6 +186,7 @@ agm-map{
 .images-menu{
   width:80%;
 }
+
 
 .left{
   transform:rotate(180deg);

@@ -4,7 +4,7 @@
       <a routerLink="/" class="for_comp"><span>Компаниям</span></a>
       <!--<a routerLink="/property">Property</a>-->
     </div>
-    <div class='logo'>
+    <div class='logo' style="display:none">
       <a routerLink="/preview">
         <img src="/assets/img/metadex_logo.png" alt="">
       </a>
@@ -15,28 +15,38 @@
     </div>
   </div>
 </header>
-<div id="choose-comp">
+
+<div id="choose-comp" class="container">
   <h3 class="title">В каком банке получить ипотеку?</h3>
   <div class="container choose-menu">
+    <div class="arrows" (click)="chooseCompanies(-1)">
+      <img class="left" src="/assets/img/icons/arrow_active.svg" alt="">
+    </div>
+
     <div class="row images-menu">
-      <div class="col-sm-4" *ngFor="let item of banks;let i = index">
+      <div class=" col-md-4 list-banks" *ngFor="let item of banks | slice:initial_slice:initial_slice+3;let i = index">
         <div class="choose-block">
           <div id="image-logo" (click)="selectBanks(i)">
             <img class="images" src="{{item.url}}" alt="">
             <div class="mark-image">
               <img src="/assets/img/icons/mark.svg" alt="">
             </div>
+            <h3 class="name-companies">{{item.name}}</h3>
           </div>
           <div class="text">
-            <h3 class="name-companies">{{item.name}}</h3>
             <a>Условии банка</a>
           </div>
         </div>
       </div>
     </div>
+    <div class=" arrows" (click)="chooseCompanies(+1)">
+      <img class="right" src="/assets/img/icons/arrow_active.svg" alt="">
+    </div>
   </div>
-  <div class="final">
-    <a class="next-btn" >Отправить на рассмотрение</a>
+  <div class="container-fluid center">
+    <div class="col-sm-12 col-md-6 final">
+      <a class="next-btn" >Отправить на рассмотрение</a>
+    </div>
   </div>
 
 </div>

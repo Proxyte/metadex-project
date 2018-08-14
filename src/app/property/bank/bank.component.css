@@ -76,9 +76,9 @@
   margin:60px 0 50px 0;
 }
 
-.next-btn{
-  padding:17px 100px;
-}
+/*.next-btn{*/
+  /*padding:17px 100px;*/
+/*}*/
 
 .stages .stage{
   width:100% !important;
@@ -94,13 +94,15 @@
   color:#373A3C;
 }
 
+
 .choose-block{
   position:relative;
   display:flex;
   flex-direction:column;
-  justify-content: center;
+  justify-content: space-between;
   align-items:center;
   text-align:center;
+  margin-bottom:30px;
 }
 
 .mark-image{
@@ -184,6 +186,7 @@ agm-map{
 
 .images-menu{
   width:80%;
+  margin-top:30px;
 }
 
 .left{
@@ -202,3 +205,5 @@ agm-map{
   display:flex;
   justify-content: space-around;
 }
+
+

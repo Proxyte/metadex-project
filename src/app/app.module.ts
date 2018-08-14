@@ -15,6 +15,7 @@ import { PreresultComponent } from './preresult/preresult.component';
 import { LogincompanyComponent } from './logincompany/logincompany.component';
 import { LoginComponent} from './login/login.component';
 import { RaterComponent } from './rater/rater.component';
+import { MoreComponent } from './more/more.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { RaterComponent } from './rater/rater.component';
     PreresultComponent,
     LogincompanyComponent,
     RaterComponent,
-    LoginComponent
+    LoginComponent,
+    MoreComponent
   ],
   imports: [
     BrowserModule,

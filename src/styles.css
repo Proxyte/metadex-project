@@ -123,7 +123,6 @@ body{
 }
 
 .signin-content{
-  width:35%;
   margin:0 auto;
 }
 
@@ -155,18 +154,52 @@ body{
   text-align:center;
 }
 
-.signup-section{
-  margin-top:40px;
+.take-full-grade{
+  border-radius:5px;
+  border:none;
+  background-color:#5CB85C;
+  color:#fff !important;
+  margin:20px auto 0 auto;
+  padding:10px 0;
+  max-width:70%;
 }
 
-.signin-btn{
-  padding:16px 163px 15px 161px;
+.take-full-grade a{
+  color:#fff !important;
+}
+
+.take-full-grade a:hover{
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.signin-section{
   border-radius:5px;
   border:none;
   background-color:#5CB85C;
   color:#fff !important;
   margin-top:20px;
+  padding:10px 0;
+  max-width:100%;
 }
+
+.signup-section{
+  margin-top:40px;
+  color:#fff !important;
+  border:none;
+  background-color:#5CB85C;
+  border-radius:5px;
+  max-width:100%;
+  padding:10px 0;
+}
+
+/*.signin-btn{*/
+  /*border-radius:5px;*/
+  /*border:none;*/
+  /*background-color:#5CB85C;*/
+  /*color:#fff !important;*/
+  /*margin-top:20px;*/
+/*}*/
 
 .signup-btn{
   padding:16px 75px 15px 73px;
@@ -221,13 +254,13 @@ body{
   color:white;
 }
 
-.register-btn,.get_rating,.next-btn{
+.final{
   color:#fff !important;
   border:none;
-  padding:15px 75px;
   background-color:#5CB85C;
   margin-top:40px;
   border-radius:5px;
+  padding:10px 0;
 }
 
 .hide{
@@ -269,6 +302,53 @@ body{
   text-align:center;
   height: 170px;
   border-radius:50%;
+}
+
+.list-banks{
+  display:flex;
+  justify-content: center;
+}
+
+.center{
+  display:flex;
+  justify-content: center;
+}
+
+@media screen and (min-width:992px){
+  .take-full-grade{
+    max-width:35%;
+  }
+}
+
+
+@media screen and (max-width:992px){
+  .choose-block #image-logo img{
+    width:100px;
+    height:100px !important;
+  }
+
+  .next-btn{
+    padding:10px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .list-banks{
+    display:block;
+    flex:-1;
+  }
+}
+
+@media screen and (max-width:576px) {
+
+  .title-section h3{
+    font-size:28px;
+  }
+
+  .text-finish h2{
+    font-size:30px;
+  }
+
 }
 
 

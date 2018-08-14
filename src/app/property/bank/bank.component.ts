@@ -10,6 +10,7 @@ export class BankComponent implements OnInit {
 
   coming_data:any;
   banks:any;
+  initial_slice = 0;
 
   constructor(private property:PropertyService) { }
 
@@ -44,6 +45,22 @@ export class BankComponent implements OnInit {
       }
     }
     console.log(this.coming_data);
+  }
+
+  chooseCompanies(index){
+    if(index=="+1"){
+      this.initial_slice = this.initial_slice+3;
+    }
+    else{
+      this.initial_slice = this.initial_slice-3;
+    }
+
+    if(this.initial_slice<0){
+      this.initial_slice = 0;
+    }
+    if(this.initial_slice>=this.property.getBanks().length){
+      this.initial_slice = 0;
+    }
   }
 
 }
