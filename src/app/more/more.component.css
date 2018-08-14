@@ -44,3 +44,61 @@
   color:#818A91;
   font-size:14px;
 }
+
+.data{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.data div{
+  display:flex;
+  flex-direction:column;
+}
+
+input{
+  padding:11px 0 11px 11px;
+}
+
+/*.address{*/
+  /*width:60%;*/
+/*}*/
+
+/*.search{*/
+  /*width:30%;*/
+/*}*/
+
+/*.tstatus{*/
+  /*width:30%;*/
+/*}*/
+
+/*.planirovka{*/
+  /*width:30%;*/
+/*}*/
+
+/*.year{*/
+  /*width:20%;*/
+/*}*/
+
+/*.types{*/
+  /*width:30%;*/
+/*}*/
+
+/*.stages{*/
+  /*width:30%;*/
+/*}*/
+
+/*.countroom{*/
+  /*width:20%;*/
+/*}*/
+
+/*.sanuz{*/
+  /*width:30%;*/
+/*}*/
+
+/*.square,.square_kitchen{*/
+  /*width:20%;*/
+/*}*/
+
+
+

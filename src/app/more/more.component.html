@@ -4,7 +4,72 @@
 <div class="container description-block">
     <div class="col-sm-8 info">
       <form action="">
-        Адрес
+        <div class="data">
+          <div>
+            <div class="address">
+              <span>Введите адрес</span>
+              <input type="text" placeholder="Например, Алматы, Богенбай батыра 49" #address>
+            </div>
+            <div class="search">
+              <span>Точность поиска</span>
+              <input type="text" #address>
+            </div>
+          </div>
+          <div>
+            <div class="tstatus">
+              <span>Техническое состояние</span>
+              <input type="text" placeholder="Отличный" #techstatus>
+            </div>
+            <div class="planirovka">
+              <span>Планировка улучшенная</span>
+              <input type="text" #address>
+            </div>
+            <div class="year">
+              <span>Год строения</span>
+              <input type="text" #address>
+            </div>
+          </div>
+
+          <div>
+            <div class="types">
+              <span>Тип строения</span>
+              <input type="text" placeholder="Монолитный" #type>
+            </div>
+
+            <div class="stages">
+              <span>Этаж</span>
+              <div class="stage">
+                <input class="stage-input" type="text" placeholder="1" #initialstage>
+                <span>из</span>
+                <input class="stage-input" type="text" placeholder="1" #endstage>
+              </div>
+            </div>
+
+            <div class="countroom">
+              <span>Комнат</span>
+              <input type="text" placeholder="1" #countroom>
+            </div>
+          </div>
+
+          <div>
+            <div class="sanuz">
+              <span>Санузел</span>
+              <input type="text" placeholder="Раздельный" #sanuzel>
+            </div>
+
+            <div class="square">
+              <span>Площадь общая, м²</span>
+              <input type="text" #square>
+            </div>
+
+            <div class="square_kitchen">
+              <span>Площадь кухни, м²</span>
+              <input type="text" #square>
+            </div>
+          </div>
+
+
+        </div>
       </form>
     </div>
 
