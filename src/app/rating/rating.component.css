@@ -100,22 +100,10 @@
   margin-top:20px;
 }
 
-.mark-image{
-  display:none;
-  position:absolute;
-  top:0;
-  right:37%;
-}
-
 .mark-image-visible{
   display:block;
 }
 
-.mark-image img{
-  width:64px;
-  height:54px;
-  z-index:2;
-}
 
 .choose-block a{
   text-decoration: underline;
@@ -129,7 +117,6 @@
 
 .choose-block #image-logo img{
   text-align:center;
-  height: 170px;
   border-radius:50%;
 }
 
