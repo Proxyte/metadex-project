@@ -193,6 +193,16 @@ body{
   padding:10px 0;
 }
 
+.next{
+  margin-top:40px;
+  color:#fff !important;
+  border:none;
+  background-color:#5CB85C;
+  border-radius:5px;
+  max-width:100%;
+  padding:10px 0;
+}
+
 /*.signin-btn{*/
   /*border-radius:5px;*/
   /*border:none;*/
@@ -333,10 +343,10 @@ body{
 }
 
 @media screen and (max-width:768px){
-  .list-banks{
+  /*.list-banks{
     display:block;
     flex:-1;
-  }
+  }*/
 }
 
 @media screen and (max-width:576px) {
