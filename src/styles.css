@@ -184,19 +184,21 @@ body{
   border:none;
   background-color:#5CB85C;
   color:#fff !important;
-  margin-top:20px;
-  padding:10px 0;
-  max-width:100%;
+  margin:40px auto 0 auto ;
+  padding:15px 0;
+  font-size:20px;
+  max-width:80%;
 }
 
 .signup-section{
-  margin-top:40px;
+  margin:40px auto 0 auto;
   color:#fff !important;
   border:none;
   background-color:#5CB85C;
   border-radius:5px;
-  max-width:100%;
-  padding:10px 0;
+  max-width:80%;
+  padding:15px 0;
+  font-size:20px;
 }
 
 .signin-section-block{
@@ -285,9 +287,11 @@ body{
   color:#fff !important;
   border:none;
   background-color:#5CB85C;
-  margin-top:40px;
+  margin:60px auto;
   border-radius:5px;
   padding:10px 0;
+  max-width:50%;
+
 }
 
 .hide{
@@ -341,6 +345,7 @@ body{
   display:flex;
   position:relative;
   justify-content: space-between;
+  padding:20px;
 }
 
 .navbar-collapse{
@@ -446,7 +451,7 @@ body{
   }
 
   .title{
-    font-size:20px;
+    font-size:30px;
   }
 
   .metadex{
