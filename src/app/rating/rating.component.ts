@@ -11,7 +11,7 @@ import { DatePipe } from '@angular/common';
 export class RatingComponent implements OnInit {
 
   data = [];
-  stepIndex = 0;
+  stepIndex = 1;
   warning :any;
   latitude = 43.229863;
   longitude = 76.867707;
@@ -131,9 +131,11 @@ export class RatingComponent implements OnInit {
 
     for(let j=0;j<marks.length;j++){
       if(j==val){
+        array[j].classList.add('make-image-grey');
         marks[j].classList.add('mark-image-visible');
       }
       else{
+        array[j].classList.remove('make-image-grey');
         marks[j].classList.remove('mark-image-visible');
       }
     }

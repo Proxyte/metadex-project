@@ -170,6 +170,11 @@ agm-map{
   width:80%;
 }
 
+.make-image-grey{
+  background:#FFFFFF;
+  opacity:.5;
+}
+
 
 .left{
   transform:rotate(180deg);
