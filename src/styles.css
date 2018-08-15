@@ -376,6 +376,24 @@ body{
   height:50px;
 }
 
+.controllers{
+  width:95%;
+}
+
+.ngx-pagination{
+  margin:60px 0 200px 0;
+  text-align:end;
+}
+
+.ngx-pagination a, .ngx-pagination button{
+  padding:0.1875rem 0.925rem;
+}
+
+.ngx-pagination .current{
+  padding:12px 15px 11px 16px !important;
+  background-color:#2BDA32 !important;
+}
+
 
 @media screen and (min-width:992px){
   .take-full-grade{

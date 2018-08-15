@@ -36,7 +36,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor ="let item of reports;let i = index">
+  <tr *ngFor ="let item of reports | paginate: { itemsPerPage: 10, currentPage: p };let i = index">
     <th scope="row">{{item.date}}</th>
     <td>{{item.address}}</td>
     <td>{{item.companies}}</td>
@@ -46,7 +46,12 @@
     <td><img src="/assets/img/icons/credit-card.svg" alt=""></td>
     <td><a class="bank" (click)="chooseBank(i)">Выбрать</a></td>
   </tr>
-
   </tbody>
 </table>
+<div class='controllers'>
+  <pagination-controls previousLabel=""
+                       nextLabel=""
+                       (pageChange)="p = $event">
+  </pagination-controls>
 
+</div>

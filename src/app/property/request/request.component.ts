@@ -13,33 +13,15 @@ import {DataService} from '../../data.service';
 })
 export class RequestComponent implements OnInit {
 
-  // user = this.data.getUser();
-  // status_user = this.user[0].status;
   reports:any;
+  p: number = 1;
 
   constructor(private property:PropertyService,private data:DataService,private router:Router) { }
 
   ngOnInit() {
-    // this.authorized = this.status_user;
-    // if(this.user.length==0){
-    //   this.authorized = false;
-    // }
-    // console.log(this.authorized);
     this.property.getItem();
     this.reports = this.property.getProperty();
   }
-
-
-  // checkUser(){
-  //   let user = this.data.getUser();
-  //   console.log("Stauts"+user[0].status);
-  //   if(user[0].status === true){
-  //     this.authorized = true;
-  //   }
-  //   else{
-  //     this.authorized = false;
-  //   }
-  // }
 
   chooseBank(val){
     let list_item = this.property.getItem();
@@ -72,5 +54,7 @@ export class RequestComponent implements OnInit {
     }
     this.router.navigate(['./description']);
   }
+
+
 
 }

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AgmCoreModule } from '@agm/core';
 import { PropertyModule } from './property/property.module';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +37,7 @@ import { MoreComponent } from './more/more.component';
     BrowserModule,
     PropertyModule,
     AppRoutingModule,
+    NgxPaginationModule,
       BrowserAnimationsModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyCAhOddJIjOHDKSKgyIjBuGHvDrUsGwD84'
