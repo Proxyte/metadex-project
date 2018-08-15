@@ -36,15 +36,16 @@ export class BankComponent implements OnInit {
       }
     }
 
-    for(let j=0;j<marks.length;j++){
-      if(j==val){
+    for(let j=0;j<marks.length;j++) {
+      if (j == val) {
+        array[j].classList.add('make-image-grey');
         marks[j].classList.add('mark-image-visible');
       }
-      else{
+      else {
+        array[j].classList.remove('make-image-grey');
         marks[j].classList.remove('mark-image-visible');
       }
     }
-    console.log(this.coming_data);
   }
 
   chooseCompanies(index){

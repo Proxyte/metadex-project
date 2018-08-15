@@ -394,6 +394,11 @@ body{
   background-color:#2BDA32 !important;
 }
 
+.make-image-grey{
+  background:#FFFFFF;
+  opacity:.5;
+}
+
 
 @media screen and (min-width:992px){
   .take-full-grade{
