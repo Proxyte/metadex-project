@@ -20,7 +20,6 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.data.getData();
-    console.log(this.data.getData());
   }
 
   checkData(){

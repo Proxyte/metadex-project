@@ -18,7 +18,6 @@ export class LogincompanyComponent implements OnInit {
 
   ngOnInit() {
     this.users = this.data.getUserComp();
-    console.log(this.data.getUserComp());
   }
 
   checkData(){

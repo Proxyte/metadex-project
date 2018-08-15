@@ -1,0 +1,40 @@
+.background{
+  height:100vh;
+  width:100%;
+  background-image:url('../../assets/img/bg_main.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+app-header{
+  position: absolute;
+  width:100%;
+  top:0;
+  left:0;
+}
+
+.main-text{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.main-text span{
+  text-align:center;
+  display:block;
+}
+
+.title{
+  margin-top:10px;
+}
+
+.signin-section-block{
+  max-width:50%;
+}

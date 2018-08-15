@@ -9,6 +9,7 @@ import {PreresultComponent} from './preresult/preresult.component';
 import {LogincompanyComponent} from './logincompany/logincompany.component';
 import {RaterComponent} from './rater/rater.component';
 import {MoreComponent} from './more/more.component';
+import {MainComponent} from './main/main.component';
 
 const routes: Routes = [
 	{
@@ -17,7 +18,11 @@ const routes: Routes = [
     children:[
       {
         path: '',
-        component: LogincompanyComponent
+        component: MainComponent
+      },
+      {
+        path:'for-company',
+        component:LogincompanyComponent
       },
       {
         path: 'login',

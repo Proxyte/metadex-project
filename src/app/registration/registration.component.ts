@@ -24,8 +24,6 @@ export class RegistrationComponent implements OnInit {
 
   ngOnInit() {
     this.data.getData();
-    console.log(this.data.getData());
-    console.log('hello');
     document.getElementById('second-div').style.display = 'none';
   }
 
@@ -57,12 +55,9 @@ export class RegistrationComponent implements OnInit {
     else{
       err_pass.className = 'fine';
       err_mail.className = 'fine';
-      console.log(pass.value,mail.value);
-      console.log(list_users);
       objUser.email = mail.value;
       objUser.password = pass.value;
       list_users.push(objUser);
-      console.log(list_users);
 
       mail.value = "";
       pass.value = "";

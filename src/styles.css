@@ -74,7 +74,7 @@ body{
 
 .btn-signup{
   padding:5px 30px;
-  background: white;
+  background: transparent;
   color:green;
   border-radius:4px;
   border:1px solid green;
@@ -344,7 +344,7 @@ body{
   display:flex;
   position:relative;
   justify-content: space-between;
-  padding:20px;
+  padding:20px 100px;
 }
 
 .navbar-collapse{
@@ -399,7 +399,6 @@ body{
   opacity:.5;
 }
 
-
 @media screen and (min-width:992px){
   .take-full-grade{
     max-width:35%;
@@ -432,6 +431,10 @@ body{
     border-right:none;
   }
 
+  .navbar{
+    padding:20px 60px;
+  }
+
   .description p{
     font-size:20px;
   }
@@ -462,6 +465,10 @@ body{
 
   .title-section h3{
     font-size:28px;
+  }
+
+  .navbar{
+    padding:20px;
   }
 
   .text-finish h2{
