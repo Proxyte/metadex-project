@@ -49,6 +49,7 @@ export class PreviewComponent implements OnInit {
     if(address.value=='' && square.value=='' && countroom.value=='' && year.value=='' &&
       initialstage.value=='' && endstage.value=='' && type.value=='')
     {
+      window.scrollTo(0,0);
       this.warning = true;
     }
     else{

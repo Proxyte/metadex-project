@@ -11,7 +11,7 @@ import { DatePipe } from '@angular/common';
 export class RatingComponent implements OnInit {
 
   data = [];
-  stepIndex = 1;
+  stepIndex = 0;
   warning :any;
   latitude = 43.229863;
   longitude = 76.867707;

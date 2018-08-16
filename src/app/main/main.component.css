@@ -3,7 +3,7 @@
   width:100%;
   background-image:url('../../assets/img/bg_main.jpg');
   background-repeat:no-repeat;
-  background-position:center;
+  background-position:center center;
   background-size:cover;
   position:relative;
   display:flex;

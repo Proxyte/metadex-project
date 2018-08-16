@@ -195,3 +195,12 @@ agm-map{
 .show{
   display:block;
 }
+
+.choose-block{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items:center;
+  text-align:center;
+  margin-bottom:30px;
+}

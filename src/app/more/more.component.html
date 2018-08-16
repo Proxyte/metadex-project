@@ -2,67 +2,74 @@
 <h3 class="title">Рассмотрение заявки</h3>
 
 <div class="container description-block">
-    <div class="col-sm-8 info">
+    <div class="col-md-8 info">
       <form action="">
         <div class="data">
-          <div>
-            <div class="address">
+          <div class="data-rows">
+            <div class="col-sm-6 col-md-7 address">
               <span>Введите адрес</span>
               <input type="text" placeholder="Например, Алматы, Богенбай батыра 49" #address>
             </div>
-            <div class="search">
+            <div class="col-sm-6 col-md-5 search">
               <span>Точность поиска</span>
               <input type="text" #address>
             </div>
           </div>
-          <div>
-            <div class="tstatus">
+
+          <div class="data-rows-blocks">
+            <div class="col-sm-4 col-md-5 tstatus">
               <span>Техническое состояние</span>
               <input type="text" placeholder="Отличный" #techstatus>
             </div>
-            <div class="planirovka">
+            <div class="col-sm-4 col-md-4 planirovka">
               <span>Планировка улучшенная</span>
               <input type="text" #address>
             </div>
-            <div class="year">
+            <div class="col-sm-4 col-md-3 year">
               <span>Год строения</span>
               <input type="text" #address>
             </div>
           </div>
 
-          <div>
-            <div class="types">
+          <div class="data-rows-blocks">
+            <div class="col-md-5 types">
               <span>Тип строения</span>
               <input type="text" placeholder="Монолитный" #type>
             </div>
 
-            <div class="stages">
+            <div class="col-md-4 stages">
               <span>Этаж</span>
               <div class="stage">
-                <input class="stage-input" type="text" placeholder="1" #initialstage>
-                <span>из</span>
-                <input class="stage-input" type="text" placeholder="1" #endstage>
+                <div class="col-md-5">
+                  <input class="stage-input" type="text" placeholder="1" #initialstage>
+                </div>
+                <div class="col-md-2">
+                  <span>из</span>
+                </div>
+                <div class="col-md-5">
+                  <input class="stage-input" type="text" placeholder="1" #endstage>
+                </div>
               </div>
             </div>
 
-            <div class="countroom">
+            <div class="col-md-3 countroom">
               <span>Комнат</span>
               <input type="text" placeholder="1" #countroom>
             </div>
           </div>
 
-          <div>
-            <div class="sanuz">
+          <div class="data-rows-blocks">
+            <div class="col-md-4 sanuz">
               <span>Санузел</span>
               <input type="text" placeholder="Раздельный" #sanuzel>
             </div>
 
-            <div class="square">
+            <div class="col-md-4 square">
               <span>Площадь общая, м²</span>
               <input type="text" #square>
             </div>
 
-            <div class="square_kitchen">
+            <div class="col-md-4 square_kitchen">
               <span>Площадь кухни, м²</span>
               <input type="text" #square>
             </div>
@@ -71,9 +78,17 @@
 
         </div>
       </form>
+      <div class="map">
+        <span class="map-text">
+          Выбрать объекты на карте
+        </span>
+        <agm-map [latitude]="latitude" [longitude]="longitude" (mapClick)="onChooseLocation($event)">
+          <agm-marker *ngIf="locationChosen" [latitude]="latitude" [longitude]="longitude"></agm-marker>
+        </agm-map>
+      </div>
     </div>
 
-    <div class="col-sm-4 item-list">
+    <div class="col-md-4 item-list">
       <span style="color:#818A91">Найдено {{property_list.length}} объектов</span>
 
       <div class="item" *ngFor = 'let item of property_list'>
@@ -96,5 +111,6 @@
       </div>
     </div>
 </div>
+
 
 
