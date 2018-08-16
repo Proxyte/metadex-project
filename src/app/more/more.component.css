@@ -109,5 +109,26 @@ agm-map{
   margin-bottom:20px;
 }
 
+.item-list{
+  height:100vh;
+  overflow:auto;
+  display:inline;
+}
+
+.analize{
+  margin:70px auto;
+  text-align:center;
+}
+
+.analize-btn{
+  color:#fff !important;
+  font-size:20px;
+  border:none;
+  background-color:#5CB85C;
+  margin-top:15px;
+  padding:15px 0;
+  border-radius:5px;
+}
+
 
 
