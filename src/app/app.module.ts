@@ -19,6 +19,7 @@ import { LoginComponent} from './login/login.component';
 import { RaterComponent } from './rater/rater.component';
 import { MoreComponent } from './more/more.component';
 import { MainComponent } from './main/main.component';
+import { AnalyzeComponent } from './analyze/analyze.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { MainComponent } from './main/main.component';
     RaterComponent,
     LoginComponent,
     MoreComponent,
-    MainComponent
+    MainComponent,
+    AnalyzeComponent
   ],
   imports: [
     BrowserModule,

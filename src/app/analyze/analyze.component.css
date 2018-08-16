@@ -1,0 +1,164 @@
+.changes{
+  width:80%;
+  margin:42px auto 58px auto;
+}
+
+.changes h2{
+  font-size:28px;
+  margin-bottom:30px;
+}
+
+.finance-block{
+  display:flex;
+  flex-direction:row;
+}
+
+.finance{
+  padding-left:0;
+}
+
+.finance span{
+  font-weight:bold;
+}
+
+.precentage{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align:end;
+}
+
+.precentage input{
+  width:20%;
+  border:none;
+  text-align:center;
+  border-bottom:1px solid #AEB1B3;
+  margin-right:20px;
+}
+
+table{
+  width:80%;
+  margin:0 auto 60px auto;
+}
+
+.title{
+  margin-bottom:10px;
+}
+
+.info span{
+  display:block;
+  text-align:center;
+}
+
+.info-address{
+  display:flex;
+  margin-bottom:50px;
+  font-size:28px;
+  color:#373A3C;
+}
+
+.price-blocks{
+  display:flex;
+  width:80%;
+  margin:0 auto 70px auto;
+  flex-direction:row;
+}
+
+/*.price,.average_price{*/
+/*border:1px solid black;*/
+/*}*/
+
+.price-title{
+  font-size:20px;
+}
+
+.average_price{
+  width:25%;
+  margin-left:20px;
+}
+
+.price div,.average_price div{
+  background-color:#E2EED8;
+  margin-top:20px;
+  padding:44px 128px 93px 30px;
+}
+
+.average_price div{
+  padding:44px 35px 44px 30px;
+}
+
+.kzt{
+  font-size:32px;
+  font-weight:bold;
+}
+
+.dollar{
+  font-size:28px;
+}
+
+.upload-block{
+  display:flex;
+}
+
+.download{
+  display:inline-block;
+  padding:8px 26px 8px 20px;
+  margin:0 auto 50px auto;
+  border:1px solid #5CB85C;
+  border-radius:5px;
+}
+
+.download img{
+  width:30px;
+  margin-right:10px;
+}
+
+.table-block{
+  width:80%;
+  margin:0 auto;
+  display:flex;
+  flex-direction:row;
+  margin-bottom:72px;
+}
+
+.load-table,.create-report{
+  border-radius:80px;
+  padding:15px 0;
+  text-align:center;
+  font-size:25px;
+  color:#fff;
+  margin-right:63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-table{
+  background:linear-gradient(to right,#62BC4C,#34A172);
+
+}
+
+.create-report{
+  background:linear-gradient(to right,#EC5656,#FF984A);
+}
+
+.info-client{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#AEB1B3;
+  text-align:center;
+}
+
+@media screen and (max-width:576px){
+  .kzt{
+    font-size:16px;
+  }
+
+  .load-table,.create-report{
+    margin-right:20px;
+    padding:5px 0;
+    font-size:16px;
+  }
+
+}

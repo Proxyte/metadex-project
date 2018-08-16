@@ -10,6 +10,7 @@ import {LogincompanyComponent} from './logincompany/logincompany.component';
 import {RaterComponent} from './rater/rater.component';
 import {MoreComponent} from './more/more.component';
 import {MainComponent} from './main/main.component';
+import {AnalyzeComponent} from './analyze/analyze.component';
 
 const routes: Routes = [
 	{
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
         path: 'login',
         component: LoginComponent
+      },
+      {
+        path:'analyze',
+        component:AnalyzeComponent
       },
       {
         path: 'registration',

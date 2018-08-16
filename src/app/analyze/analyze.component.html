@@ -1,0 +1,145 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="">
+    <a routerLink="/for-company" class="for_comp"><span>Компаниям</span></a>
+  </div>
+  <div class='logo'>
+    <a routerLink="/">
+      <img src="/assets/img/metadex_logo.png" alt="">
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class='buttons'>
+      <a routerLink="/login"><button type="button" class="btn btn-signup">Вход</button></a>
+      <a routerLink="/registration" ><button type="button" class="btn btn-success">Регистрация</button></a>
+    </div>
+  </div>
+</nav>
+
+<div class="info">
+  <h3 class="title">Отчет от {{coming_data[0].companies}}</h3>
+  <span>Адрес объекта</span>
+  <br>
+  <span class="info-address">{{coming_data[0].address}}</span>
+</div>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col"></th>
+    <th *ngFor = 'let count of  property_list |slice:0:5;let i = index'>
+      Аналог {{i}}
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th>Месторасположение</th>
+    <td *ngFor="let item of  property_list |slice:0:5">{{item.address}}</td>
+  </tr>
+  <tr>
+    <th>Источник данных</th>
+    <td *ngFor="let item of  property_list |slice:0:5">12331</td>
+  </tr>
+  <tr>
+    <th>Контактные данные</th>
+    <td *ngFor="let item of  property_list |slice:0:5">+777777777777</td>
+  </tr>
+  <tr>
+    <th>Количество комнат</th>
+    <td *ngFor="let item of  property_list |slice:0:5">{{item.count_room}}</td>
+  </tr>
+  <tr>
+    <th>Материал стен здания</th>
+    <td *ngFor="let item of  property_list |slice:0:5">Бетон</td>
+  </tr>
+  <tr>
+    <th>Этаж</th>
+    <td *ngFor="let item of  property_list |slice:0:5">{{item.initial_stage}} из {{item.end_stage}}</td>
+  </tr>
+  <tr>
+    <th>Общая площадь, м²</th>
+    <td *ngFor="let item of  property_list |slice:0:5">{{item.square}}</td>
+  </tr>
+  <tr>
+    <th>Санузел</th>
+    <td *ngFor="let item of  property_list |slice:0:5">{{item.bathroom}}</td>
+  </tr>
+  <tr>
+    <th>Планировка</th>
+    <td *ngFor="let item of  property_list |slice:0:5">{{item.layout}}</td>
+  </tr>
+  <tr>
+    <th>Техническое состояние</th>
+    <td *ngFor="let item of  property_list |slice:0:5">{{item.tech_status}}</td>
+  </tr>
+  <tr>
+    <th>Год постройки</th>
+    <td *ngFor="let item of  property_list |slice:0:5">1996</td>
+  </tr>
+  <tr>
+    <th>Цена предложения, KZT</th>
+    <td *ngFor="let item of  property_list |slice:0:5">10000000</td>
+  </tr>
+  <tr>
+    <th>Цена за м², KZT</th>
+    <td *ngFor="let item of  property_list |slice:0:5">200000</td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="changes">
+  <h2>Корректировки</h2>
+  <div class="finance-block">
+    <div class="col-sm-4 finance">
+      <span>На финансовые условия</span>
+    </div>
+    <div class="col-sm-8 precentage">
+        <div>
+          <input type="text" value="0"><span>%</span>
+        </div>
+        <div>
+          <input type="text" value="0"><span>%</span>
+        </div>
+        <div>
+          <input type="text" value="0"><span>%</span>
+        </div>
+        <div>
+          <input type="text" value="0"><span>%</span>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="price-blocks">
+  <div class="col-sm-8 price">
+    <span class="price_title">Рыночная стоимость квартиры</span>
+    <div>
+      <span class="kzt">111 000 000 000 KZT</span>
+      <br>
+      <span class="dollar">332 335 329 USD</span>
+    </div>
+  </div>
+  <div class="average_price">
+    <span class="price_title">Средняя стоимость 1м² с учетом корректировки</span>
+    <div>
+      <span class="kzt">5 368 KZT</span>
+    </div>
+  </div>
+</div>
+
+<div class="table-block">
+  <div class="col-sm-4 col-md-3 load-table">
+    <span>Выгрузить таблицу</span>
+  </div>
+  <div class="col-sm-4 col-md-3 create-report">
+    <span>Создать отчет</span>
+  </div>
+  <div class="col-sm-4 col-md-2 info-client">
+    <span>Данные о клиенте</span>
+  </div>
+</div>

@@ -50,11 +50,11 @@
     </tr>
     <tr>
       <th>Источник данных</th>
-      <td>12331</td>
+      <td *ngFor="let item of reports">12331</td>
     </tr>
     <tr>
       <th>Контактные данные</th>
-      <td>+777777777777</td>
+      <td *ngFor="let item of reports">+777777777777</td>
     </tr>
     <tr>
       <th>Количество комнат</th>
@@ -62,7 +62,7 @@
     </tr>
     <tr>
       <th>Материал стен здания</th>
-      <td>Бетон</td>
+      <td *ngFor="let item of reports">Бетон</td>
     </tr>
     <tr>
       <th>Этаж</th>
@@ -86,20 +86,16 @@
     </tr>
     <tr>
       <th>Год постройки</th>
-      <td>1996</td>
+      <td *ngFor="let item of reports">1996</td>
     </tr>
     <tr>
       <th>Цена предложения, KZT</th>
-      <td>10000000</td>
+      <td *ngFor="let item of reports">10000000</td>
     </tr>
     <tr>
       <th>Цена за м², KZT</th>
-      <td>200000</td>
+      <td *ngFor="let item of reports">200000</td>
     </tr>
-    <!--<tr>-->
-      <!--<th>Type</th>-->
-      <!--<td *ngFor="let item of reports">{{item.type}}</td>-->
-    <!--</tr>-->
   </tbody>
 </table>
 
