@@ -397,6 +397,7 @@ body{
 .make-image-grey{
   background:#FFFFFF;
   opacity:.5;
+  border:1px solid #5CB85C;
 }
 
 @media screen and (min-width:992px){

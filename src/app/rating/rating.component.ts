@@ -11,7 +11,7 @@ import { DatePipe } from '@angular/common';
 export class RatingComponent implements OnInit {
 
   data = [];
-  stepIndex = 0;
+  stepIndex = 1;
   warning :any;
   latitude = 43.229863;
   longitude = 76.867707;
@@ -142,7 +142,7 @@ export class RatingComponent implements OnInit {
 
     for(let k = 0;k<name_companies.length;k++){
       if(k===val){
-        this.data[list_items.length-1].companies = name_companies[k].innerHTML;
+        this.data[list_items.length-1].companies.second = name_companies[k].innerHTML;
         console.log(list_items);
       }
       else{
