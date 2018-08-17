@@ -31,7 +31,7 @@
   <thead>
   <tr>
     <th scope="col"></th>
-    <th *ngFor = 'let count of  property_list |slice:0:5;let i = index'>
+    <th *ngFor = 'let count of  property_list;let i = index'>
       Аналог {{i}}
     </th>
   </tr>
@@ -39,55 +39,55 @@
   <tbody>
   <tr>
     <th>Месторасположение</th>
-    <td *ngFor="let item of  property_list |slice:0:5">{{item.address}}</td>
+    <td *ngFor="let item of  property_list">{{item.address}}</td>
   </tr>
   <tr>
     <th>Источник данных</th>
-    <td *ngFor="let item of  property_list |slice:0:5">12331</td>
+    <td *ngFor="let item of  property_list">12331</td>
   </tr>
   <tr>
     <th>Контактные данные</th>
-    <td *ngFor="let item of  property_list |slice:0:5">+777777777777</td>
+    <td *ngFor="let item of  property_list">+777777777777</td>
   </tr>
   <tr>
     <th>Количество комнат</th>
-    <td *ngFor="let item of  property_list |slice:0:5">{{item.count_room}}</td>
+    <td *ngFor="let item of  property_list">{{item.count_room}}</td>
   </tr>
   <tr>
     <th>Материал стен здания</th>
-    <td *ngFor="let item of  property_list |slice:0:5">Бетон</td>
+    <td *ngFor="let item of  property_list">Бетон</td>
   </tr>
   <tr>
     <th>Этаж</th>
-    <td *ngFor="let item of  property_list |slice:0:5">{{item.initial_stage}} из {{item.end_stage}}</td>
+    <td *ngFor="let item of  property_list">{{item.initial_stage}} из {{item.end_stage}}</td>
   </tr>
   <tr>
     <th>Общая площадь, м²</th>
-    <td *ngFor="let item of  property_list |slice:0:5">{{item.square}}</td>
+    <td *ngFor="let item of  property_list">{{item.square}}</td>
   </tr>
   <tr>
     <th>Санузел</th>
-    <td *ngFor="let item of  property_list |slice:0:5">{{item.bathroom}}</td>
+    <td *ngFor="let item of  property_list">{{item.bathroom}}</td>
   </tr>
   <tr>
     <th>Планировка</th>
-    <td *ngFor="let item of  property_list |slice:0:5">{{item.layout}}</td>
+    <td *ngFor="let item of  property_list">{{item.layout}}</td>
   </tr>
   <tr>
     <th>Техническое состояние</th>
-    <td *ngFor="let item of  property_list |slice:0:5">{{item.tech_status}}</td>
+    <td *ngFor="let item of  property_list">{{item.tech_status}}</td>
   </tr>
   <tr>
     <th>Год постройки</th>
-    <td *ngFor="let item of  property_list |slice:0:5">1996</td>
+    <td *ngFor="let item of  property_list">1996</td>
   </tr>
   <tr>
     <th>Цена предложения, KZT</th>
-    <td *ngFor="let item of  property_list |slice:0:5">10000000</td>
+    <td *ngFor="let item of  property_list">10000000</td>
   </tr>
   <tr>
     <th>Цена за м², KZT</th>
-    <td *ngFor="let item of  property_list |slice:0:5">200000</td>
+    <td *ngFor="let item of  property_list">200000</td>
   </tr>
   </tbody>
 </table>
@@ -112,6 +112,10 @@
           <input type="text" value="0"><span>%</span>
         </div>
     </div>
+  </div>
+
+  <div>
+    
   </div>
 </div>
 
