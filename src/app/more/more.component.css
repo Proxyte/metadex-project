@@ -30,7 +30,7 @@
 .checkbox{
   color:#5CB85C;
   background-color:#E2EED8;
-  padding:12px 10px 13px 14px;
+  padding:13px 9px;
   display:flex;
   flex-direction:row;
   justify-content: space-between;
@@ -43,6 +43,7 @@
 .date{
   color:#818A91;
   font-size:14px;
+  text-align:end;
 }
 
 .data{
@@ -128,6 +129,38 @@ agm-map{
   margin-top:15px;
   padding:15px 0;
   border-radius:5px;
+}
+
+.sanuz,.square,.square_kitchen,.tstatus,.planirovka,.year{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:992px){
+
+}
+
+@media screen and (max-width:768px){
+
+  .container{
+    max-width:90%;
+  }
+
+  .description-block{
+    display:flex;
+    flex-direction:column;
+  }
+
+  /*.tstatus span,.planirovka span,.year span{*/
+    /*display:block;*/
+    /*width:30%;*/
+  /*}*/
+
+  .item-list{
+    margin-top:50px;
+  }
+
 }
 
 

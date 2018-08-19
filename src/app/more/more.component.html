@@ -2,7 +2,7 @@
 <h3 class="title">Рассмотрение заявки</h3>
 
 <div class="container description-block">
-    <div class="col-md-8 info">
+    <div class="col-sm-12 col-md-8 info">
       <form action="">
         <div class="data">
           <div class="data-rows">
@@ -32,44 +32,44 @@
           </div>
 
           <div class="data-rows-blocks">
-            <div class="col-md-5 types">
+            <div class="col-sm-4 col-md-5 types">
               <span>Тип строения</span>
               <input type="text" placeholder="Монолитный" #type>
             </div>
 
-            <div class="col-md-4 stages">
+            <div class="col-sm-4 col-md-4 stages">
               <span>Этаж</span>
               <div class="stage">
-                <div class="col-md-5">
+                <div class="col-sm-5 col-md-5">
                   <input class="stage-input" type="text" placeholder="1" #initialstage>
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-2 col-md-2">
                   <span>из</span>
                 </div>
-                <div class="col-md-5">
+                <div class="col-sm-5 col-md-5">
                   <input class="stage-input" type="text" placeholder="1" #endstage>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-3 countroom">
+            <div class="col-sm-4 col-md-3 countroom">
               <span>Комнат</span>
               <input type="text" placeholder="1" #countroom>
             </div>
           </div>
 
           <div class="data-rows-blocks">
-            <div class="col-md-4 sanuz">
+            <div class="col-sm-4 col-md-4 sanuz">
               <span>Санузел</span>
               <input type="text" placeholder="Раздельный" #sanuzel>
             </div>
 
-            <div class="col-md-4 square">
+            <div class="col-sm-4 col-md-4 square">
               <span>Площадь общая, м²</span>
               <input type="text" #square>
             </div>
 
-            <div class="col-md-4 square_kitchen">
+            <div class="col-sm-4 col-md-4 square_kitchen">
               <span>Площадь кухни, м²</span>
               <input type="text" #square>
             </div>
@@ -88,7 +88,7 @@
       </div>
     </div>
 
-    <div class="col-md-4 item-list">
+    <div class="col-sm-12 col-md-4 item-list">
       <span style="color:#818A91">Найдено {{property_list.length}} объектов</span>
       <div class="list-of-property">
         <div class="item" *ngFor = 'let item of property_list'>
@@ -113,7 +113,7 @@
     </div>
 </div>
 
-<div class="col-md-4 analize">
+<div class="col-sm-6 col-md-4 analize">
   <span>Выбрано 3 объекта</span>
   <div class="analize-btn" routerLink="/analyze">
     <a>Анализировать</a>
