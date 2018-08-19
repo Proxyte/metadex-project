@@ -142,7 +142,7 @@ export class RatingComponent implements OnInit {
 
     for(let k = 0;k<name_companies.length;k++){
       if(k===val){
-        this.data[list_items.length-1].companies.second = name_companies[k].innerHTML;
+        this.data[list_items.length-1].companies = name_companies[k].innerHTML;
         console.log(list_items);
       }
       else{
