@@ -8,7 +8,7 @@ import {PropertyService} from '../property.service';
 })
 export class MoreComponent implements OnInit {
 
-  property_list;
+  property_list:any;
   latitude = 43.229863;
   longitude = 76.867707;
   locationChosen = false;

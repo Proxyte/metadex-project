@@ -13,14 +13,6 @@
   font-weight:normal !important;
 }
 
-.preresult h4{
-  font-size:80px;
-}
-
-.preresult h2{
-  font-size:61px;
-}
-
 .register-section{
   margin-top:40px;
   width:66%;
@@ -31,5 +23,10 @@
 }
 
 .register{
-  margin-top:40px;
+  padding:10px 0;
+  background: #5CB85C;
+  color:#fff;
+  border-radius:4px;
+  border:1px solid green;
+  margin:40px auto 0 auto;
 }

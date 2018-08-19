@@ -16,3 +16,13 @@ table tbody tr td img{
   width: 30px;
   height:30px;
 }
+
+.bank{
+  color:#2BDA32 !important;
+  cursor:pointer;
+
+}
+
+.status{
+  color:#2BDA32 !important;
+}

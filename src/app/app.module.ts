@@ -42,7 +42,7 @@ import { AnalyzeComponent } from './analyze/analyze.component';
     PropertyModule,
     AppRoutingModule,
     NgxPaginationModule,
-      BrowserAnimationsModule,
+    BrowserAnimationsModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyCAhOddJIjOHDKSKgyIjBuGHvDrUsGwD84'
     })

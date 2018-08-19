@@ -10,7 +10,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
   imports: [
     CommonModule,
     PropertyRoutingModule,
-    NgxPaginationModule
+    NgxPaginationModule,
 
   ],
   declarations: [

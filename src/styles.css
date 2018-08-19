@@ -400,6 +400,14 @@ body{
   border:1px solid #5CB85C;
 }
 
+.preresult h4{
+  font-size:80px;
+}
+
+.preresult h2{
+  font-size:61px;
+}
+
 @media screen and (min-width:992px){
   .take-full-grade{
     max-width:35%;
@@ -495,6 +503,14 @@ body{
   .description{
     width:80%;
     margin:0 auto;
+  }
+
+  .preresult h4{
+    font-size:40px;
+  }
+
+  .preresult h2{
+    font-size:30px;
   }
 }
 

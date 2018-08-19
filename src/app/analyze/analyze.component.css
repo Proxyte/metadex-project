@@ -11,6 +11,7 @@
 .finance-block{
   display:flex;
   flex-direction:row;
+  margin-bottom:50px;
 }
 
 .finance{
@@ -64,9 +65,9 @@ table{
   flex-direction:row;
 }
 
-/*.price,.average_price{*/
-/*border:1px solid black;*/
-/*}*/
+.price{
+  padding-left:0;
+}
 
 .price-title{
   font-size:20px;
@@ -148,6 +149,78 @@ table{
   align-items: center;
   color:#AEB1B3;
   text-align:center;
+}
+
+.add{
+  margin-top:40px;
+}
+
+.add span{
+  color:#2BDA32;
+}
+
+.add img{
+  width:22px;
+  height:22px;
+  margin-left:15px;
+}
+
+.dropdown-block{
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.dropdown-menu-left{
+  border:1px solid #95989A;
+  padding:0;
+  z-index:2;
+  position: fixed;
+  bottom:0;
+  animation:animationDropdown 0.5s ease-in-out;
+  background-color:#fff;
+}
+
+@keyframes animationDropdown{
+  0%{
+    opacity:0;
+  }
+
+  50%{
+    transform:translateY(-5px);
+  }
+
+  100%{
+    transform:translateY(0px);
+    opacity:1;
+  }
+
+}
+
+.change-items{
+  padding:11px;
+}
+
+.change-blocks:hover{
+  background-color:#E2EED8;
+  cursor:pointer;
+}
+
+@media screen and (max-width:768px){
+  .finance-block{
+    flex-direction: column;
+  }
+
+  .finance{
+    text-align:center;
+    margin-bottom:20px;
+  }
 }
 
 @media screen and (max-width:576px){
