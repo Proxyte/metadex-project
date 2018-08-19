@@ -189,15 +189,19 @@ table{
 
 @keyframes animationDropdown{
   0%{
+    max-height:0;
     opacity:0;
   }
 
-  50%{
-    transform:translateY(-5px);
-  }
+  /*50%{*/
+    /*max-height:50%;*/
+    /*opacity:.7;*/
+    /*!*transform:translateY(-5px);*!*/
+  /*}*/
 
   100%{
-    transform:translateY(0px);
+    max-height:100%;
+    /*transform:translateY(0px);*/
     opacity:1;
   }
 
