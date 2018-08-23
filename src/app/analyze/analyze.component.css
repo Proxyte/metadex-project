@@ -99,6 +99,17 @@
   font-weight:bold;
 }
 
+.change-link-block{
+  text-align:end;
+  margin-bottom:13px;
+}
+
+.change-link{
+  text-align:end;
+  color:#2BDA32 !important;
+  text-decoration: underline;
+}
+
 .dollar{
   font-size:28px;
 }
