@@ -37,8 +37,13 @@
   margin-right:20px;
 }
 
-table{
-  width:80%;
+/*table{*/
+  /*width:80%;*/
+  /*margin:0 auto 60px auto;*/
+/*}*/
+
+.table-div{
+  /*width:80%;*/
   margin:0 auto 60px auto;
 }
 
