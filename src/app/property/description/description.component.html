@@ -34,16 +34,17 @@
   </div>
 </div>
 
-<table class="table table-striped">
-  <thead>
+<div class="col-sm-10 col-md-11 table-div" style="overflow-x:auto;">
+  <table class="table table-striped table-responsive">
+    <thead>
     <tr>
-    <th scope="col"></th>
-    <th *ngFor = 'let count of reports;let i = index'>
-    Аналог {{i}}
-    </th>
+      <th scope="col"></th>
+      <th *ngFor = 'let count of reports;let i = index'>
+        Аналог {{i}}
+      </th>
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     <tr>
       <th>Месторасположение</th>
       <td *ngFor="let item of reports">{{item.address}}</td>
@@ -96,11 +97,16 @@
       <th>Цена за м², KZT</th>
       <td *ngFor="let item of reports">200000</td>
     </tr>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
+
+<!--<table class="table table-striped">-->
+  <!---->
+<!--</table>-->
 
 <div class="price-blocks">
-  <div class="price">
+  <div class="col-12 col-sm-6 col-md-9 price">
     <span class="price_title">Рыночная стоимость квартиры</span>
     <div>
       <span class="kzt">111 000 000 000 KZT</span>
@@ -108,7 +114,7 @@
       <span class="dollar">332 335 329 USD</span>
     </div>
   </div>
-  <div class="average_price">
+  <div class="col-8 col-sm-6 col-md-3 average_price">
     <span class="price_title">Средняя стоимость 1м² с учетом корректировки</span>
     <div>
       <span class="kzt">5 368 KZT</span>

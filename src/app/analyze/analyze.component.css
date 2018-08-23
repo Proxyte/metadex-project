@@ -79,18 +79,19 @@
 }
 
 .average_price{
-  width:25%;
-  margin-left:20px;
+  padding-left:0;
 }
 
-.price div,.average_price div{
+.price div{
   background-color:#E2EED8;
   margin-top:20px;
-  padding:44px 128px 93px 30px;
+  padding:44px 0 93px 30px;
 }
 
 .average_price div{
-  padding:44px 35px 44px 30px;
+  background-color:#E2EED8;
+  margin-top:20px;
+  padding:44px 0 44px 30px;
 }
 
 .kzt{
@@ -226,14 +227,22 @@
 }
 
 @media screen and (max-width:576px){
-  .kzt{
-    font-size:16px;
-  }
+  /*.kzt{*/
+    /*font-size:16px;*/
+  /*}*/
 
   .load-table,.create-report{
     margin-right:20px;
     padding:5px 0;
     font-size:16px;
   }
+  .price-blocks{
+    display:flex;
+    flex-direction:column;
+  }
 
+  .average_price{
+    margin-top:30px;
+  }
 }
+
