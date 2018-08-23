@@ -14,3 +14,13 @@ tbody tr td img{
 .title{
   margin-top:150px;
 }
+
+/*.table-responsive{*/
+  /*display:inherit;*/
+/*}*/
+
+/*@media screen and (max-width:992px){*/
+  /*.table-responsive{*/
+    /*display:block;*/
+  /*}*/
+/*}*/
